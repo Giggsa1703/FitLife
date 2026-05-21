@@ -3,8 +3,8 @@
 
 # 1. Знакомство
 user_name = input("Как тебя зовут? ")
-user_age = int(input("Сколько тебе лет? "))
-
+user_age = input("Сколько тебе лет? ")
+user_age = int(user_age)
 
 # 2. Сбор данных
 user_weight = float(input("Введите ваш вес в кг: "))
