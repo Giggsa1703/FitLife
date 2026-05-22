@@ -4,10 +4,6 @@ user_name = input("Как тебя зовут? ")
 user_age = int(input("Сколько тебе лет? "))
 
 
-
-
-
-
 # Рост,вес
 user_weight = float(input("Введите ваш вес в кг: "))
 user_height = float(input("Введите ваш рост в метрах: "))
