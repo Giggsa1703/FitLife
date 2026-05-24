@@ -1,7 +1,7 @@
 #  Первый проект
 # Знакомство с пользователем
 user_name = input("Как тебя зовут? ")
-user_age = int(input("Сколько тебе лет? "))
+user_age = int(input("Сколько тебе лет?(только цифры) "))
 
 
 # Рост,вес
@@ -15,12 +15,13 @@ bmi_rounded = round(bmi, 1)
 
 
 # Расчёт кол-ва воды
-water_ml = user_weight * 30
-water_l = water_ml / 1000
+WATER_ML = user_weight * 30
+WATER_L = WATER_ML / 1000
 
 
-print(f"Привет, {user_name}! Твой возраст {user_age}.")
-print(f"Твой индекс Массы Тела: {bmi_rounded}")
-print(f"Рекомендуемая норма воды: {water_l:.1f} л. в день")
-
-print("Расчет окончен. Будьте здоровы!")
+if __name__ == '__main__':
+    print(f"Привет, {user_name}! Твой возраст {user_age}.")
+    print(f"Твой индекс Массы Тела: {bmi_rounded}")
+    print(f"Рекомендуемая норма воды: {WATER_L:.1f} л. в день")
+ 
+    print("Расчет окончен. Будьте здоровы!")
