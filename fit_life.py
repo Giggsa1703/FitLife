@@ -5,8 +5,8 @@ user_age = int(input("Сколько тебе лет?(только цифры) "
 
 
 # Рост,вес
-user_weight = float(input("Введите ваш вес в кг: "))
-user_height = float(input("Введите ваш рост в метрах: "))
+user_weight = float(input("Введите ваш вес в кг: (например 80) "))
+user_height = float(input("Введите ваш рост в метрах: (например 1.75) "))
 
 
 # Расчёт индекса
@@ -15,8 +15,10 @@ bmi_rounded = round(bmi, 1)
 
 
 # Расчёт кол-ва воды
-WATER_ML = user_weight * 30
-WATER_L = WATER_ML / 1000
+ML = 30
+KG = 1000
+WATER_ML = user_weight * ML
+WATER_L = WATER_ML / KG
 
 
 if __name__ == '__main__':
